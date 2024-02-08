@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Me!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff3366;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff3366;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello, my Miyel!</h1>
+    <p>I have a question for you, sagutin mo ha.</p>
+    <p>Will you be my Valentine?</p>
+
+    <button onclick="askValentine()">pindutin mo ako(>_<)</button>
+
+    <script>
+        function askValentine() {
+            var response = prompt("Please type 'yes' or 'no'");
+            
+            if (response !== null) {
+                response = response.toLowerCase();
+                
+                if (response === 'yes') {
+                    alert("Thank you for saying yes, baby! I love you Miyel!");
+                } else if (response === 'no') {
+                    alert("No, ulitin mo sagutin yan baby :<");
+                } else {
+                    alert("Ano yan? yes or no lang talaga, hmp.");
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
